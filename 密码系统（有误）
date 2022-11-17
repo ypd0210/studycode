@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+#include <string>
+
+const int s = 1;
+int main()
+{
+	int ch, ch2, ch3;
+	printf("请设置密码：");
+	ch = getchar();
+	printf("请确认密码：");
+	ch2 = getchar();
+	while (s != 0)
+		{
+		if(ch!=ch2)
+			printf("两次密码不一致，请仔细检查！");
+
+			ch3 = getchar();
+
+
+			if (ch3!=ch2)
+				continue;
+			else
+				s == 0;
+
+		}
+	
+	while (s!=0)
+	{
+		printf("请重新输入密码：");	
+		
+		int ch1 = getchar();
+		
+
+		if (ch1 != ch3)
+			continue;
+		else
+			s == 0;
+
+	}
+	return 0;
+
+}
