@@ -1,0 +1,90 @@
+# studycode
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<time.h>
+#include<windows.h>
+
+#include <string>
+
+const int s = 1;
+
+int judge(int x, int y) 
+{
+	if (x = y)
+		return x;
+	else
+	{
+		printf("两次密码不一致，请重新输入：\n");
+		scanf("%d",&x);
+		return x;
+	}
+}
+int judge2(int n, int m)
+{
+	if (n = m)
+		return n;
+	else
+	{
+		printf("密码错误，请重新输入：\n");
+		scanf("%d",&n);
+		return n;
+	}
+}
+
+
+int main()
+{
+
+	printf("请设置密码：");
+	int ch = getchar();
+	printf("\n");
+
+	printf("请确认密码：");
+	printf("\n");
+	int ch2 ;
+	scanf("%d", &ch2);
+
+	int i = judge(ch, ch2);
+	printf("请输入密码解锁：");
+	printf("\n");
+
+	int ch3 ;
+	scanf("%d", &ch3);
+	int a = ch3;
+	
+	int c = judge2(i, a);
+
+	printf("解锁成功！");
+	return 0;
+
+
+}
+	///*while (s != 0)
+	//	{
+	//	ch2 = getchar();
+	//	
+	//		if (ch != ch2)
+	//		{
+	//			printf("两次密码不一致！");
+	//			continue;
+	//		}
+	//		else
+	//			s == 0;
+
+	//	}*/
+	//
+	//while (s!=0)
+	//{
+	//	printf("请重新输入密码：");	
+	//	
+	//	int ch1 = getchar();
+	//	
+
+	//	if (ch1 != ch3)
+	//		continue;
+	//	else
+	//		s == 0;
+
+	//}
+	//return 0;
+
